@@ -9,7 +9,7 @@ export default class LandingPage extends Component {
 			<div style={styles.landingDiv}>
 				<Typography style={styles.Typography} align='center' variant="h2" component="h2">
 					Hello! I'm <span style={styles.name}>Mekhala Joshi</ span>.<br />
-					I'm a full-stack web developer.<br />
+					I'm a Software Developer.<br />
 					<div className="LandingPage_items">
 						<div className="project-name">
 							<button onClick={() => this.props.onClick('two')}>View my work</button>
@@ -39,8 +39,9 @@ const styles = {
 		transform: 'translate(-50%, -50%)',
 	},
 	name: {
+		color: '#00FFFF',
 		// color: '#d71559',
-		color: '#f5c000',
+		// color: '#f5c000',
 		// textShadow: '2px 2px #f5c000',
 		fontWeight: '400',
 	},

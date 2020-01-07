@@ -30,6 +30,6 @@ export default class MyWork extends Component {
 
 const styles = {
 	link: {
-		color: '#f5c000',
+		color: '#00FFFF',
 	}
 }

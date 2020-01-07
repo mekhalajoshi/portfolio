@@ -21,7 +21,7 @@ export default class About extends Component {
 						<div className='about-text'>
 							<Typography className='about-me-text' variant="h5" component="h2">
 								Hi there! I am Mekhala Joshi. <br />
-								I am a Fullstack web developer based in Toronto, Canada.
+								I am an AWS certified Software Developer based in Toronto, Canada.
 								<br /><br />
 								I am passionate about building clean software that
 								improves the lives of those around me.
@@ -30,8 +30,7 @@ export default class About extends Component {
 								building things; websites, apps, furniture.
 								<br /><br />
 								You can check out my work on <Link style={styles.link} target='_blank' href='https://github.com/mekhalajoshi/'>GitHub </Link>
-								or view some of my work <Link style={styles.link} onClick={() => this.props.onClick('two')}>here</Link>.<br /><br />
-								As of October 2019 I am an AWS certified cloud practitioner.<br /><br />
+								or view some of it <Link style={styles.link} onClick={() => this.props.onClick('two')}>here</Link>.<br /><br />
 								Feel free to contact me via email at  mekhalajoshi@gmail.com
 							</Typography>
 						</div>
@@ -46,6 +45,6 @@ export default class About extends Component {
 
 const styles = {
 	link: {
-		color: '#f5c000',
+		color: '#00FFFF',
 	}
 }
