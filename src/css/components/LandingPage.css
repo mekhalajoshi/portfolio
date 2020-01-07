@@ -1,0 +1,42 @@
+.LandingPage_items{
+    justify-content: center;
+    border-radius: 5px;
+    display: inline-flex;
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+    cursor: pointer;
+    border: 3px dotted white;
+    transition: all 0.6s;
+    margin-top: 1vw;
+}
+.project-name {
+  display: flex;
+  align-items: flex-end;
+  /* justify-content: center; */
+  /* align-self: start; */
+}
+.LandingPage_items:hover {
+  border: 3px solid var(--aqua);
+}
+
+.LandingPage_items:hover > .project-name button {
+ transform: translateY(-8px);
+ color: var(--ter);
+}
+.project-name button {
+  font-size: 24px;
+  margin-top: 1.5vw;
+  padding: 1vw;
+  /* font-weight: bold; */
+  /* letter-spacing: 2px; */
+  color: var(--pri); 
+  transform: translateY(0px);
+  transition: all 0.5s;
+}
+button{
+
+  background: rgba(40, 44, 52, 0);
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
