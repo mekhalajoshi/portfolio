@@ -6,9 +6,7 @@ import LandingPage from './components/LandingPage'
 import About from './components/About'
 // import Contact from './Contact'
 
-import useScrollTrigger from '@material-ui/core/useScrollTrigger'
-import AppBar from '@material-ui/core/AppBar'
-
+import KeyboardArrowUpOutlinedIcon from '@material-ui/icons/KeyboardArrowUpOutlined';
 
 export default class App extends Component {
 
@@ -24,10 +22,10 @@ export default class App extends Component {
 		super(props)
 		this.textInput = React.createRef()
 
-		this.one = React.createRef()
-		this.two = React.createRef()
-		this.three = React.createRef()
-		this.four = React.createRef()
+		this.landingPage = React.createRef()
+		this.about = React.createRef()
+		this.myWork = React.createRef()
+		this.contact = React.createRef()
 		this.handleScroll = this.handleScroll.bind(this)
 		this.handleClick= this.handleClick.bind(this)
 	}
@@ -37,6 +35,7 @@ handleScroll = e => {
 	const links = document.querySelector('.links')
 	const linksHeight = links.offsetHeight
 	const allLinks = links.querySelectorAll('button')
+	const fab = document.querySelector('.fab_button_container')
 	scrollspys.forEach(current => {
 		var _ = current
 		let currentElementOffset = _.offsetTop
@@ -50,27 +49,38 @@ handleScroll = e => {
 			document
 				.querySelector(`#${currentID}-Link`)
 				.classList.add('active')
-				
+			if (currentID === `landingPage`) {
+				links.classList.remove('fixed')
+				fab.classList.add('hidden')
+
+			}
+			if (currentID === `about`) {
+				links.classList.add('fixed')
+				fab.classList.remove('hidden')
+
+			}
 		}
 	})
+	 
+
 }
 
 handleClick(id) {
 	switch (id) {
-	case 'one':
-		this.one.current.scrollIntoView({block: 'start', behavior: 'smooth'})
+	case 'landingPage':
+		this.landingPage.current.scrollIntoView({block: 'start', behavior: 'smooth'})
 		break
 		
-	case 'two':
-		this.two.current.scrollIntoView({block: 'start', behavior: 'smooth'})
+	case 'myWork':
+		this.myWork.current.scrollIntoView({block: 'start', behavior: 'smooth'})
 		break
 		
-	case 'three':
-		this.three.current.scrollIntoView({block: 'start', behavior: 'smooth'})
+	case 'about':
+		this.about.current.scrollIntoView({block: 'start', behavior: 'smooth'})
 		break
 		
-		// case 'four':
-		// 	this.four.current.scrollIntoView({block: 'start', behavior: 'smooth'})
+		// case 'contact':
+		// 	this.contact.current.scrollIntoView({block: 'start', behavior: 'smooth'})
 		// 	break
 		
 	default:
@@ -82,56 +92,33 @@ handleClick(id) {
 render() {
 	return (
 		<div >
-			<ElevationScroll {...this.props}>
-				<AppBar style={styles.AppBar}>
-					<div className="links">
-						<button onClick={()=>this.handleClick('three')} id='Third-Link'>About</button>
-						<button onClick={()=>this.handleClick('two')} id='Second-Link'>My Work</button>
-						<button onClick={()=>this.handleClick('one')} id='First-Link'className="active">Home</button>
-						{/* <button onClick={()=>this.handleClick('four')} id='Fourth-Link'>Contact</button> */}
-					</div>
-				</AppBar>
-			</ElevationScroll>
-				
 			<div className="containers" onScroll={this.handleScroll}>
-				<div ref={this.one} id="First" className="scrollspy"> 
+				<div ref={this.landingPage} id="landingPage" className="scrollspy"> 
 					<LandingPage  onClick={this.handleClick}/>
 				</div>
-				<div ref={this.two} id="Second" className="scrollspy"> 
-					<MyWork />
+				<div className="links">
+							<button onClick={()=>this.handleClick('landingPage')} id='landingPage-Link'className="active">HOME</button>
+							<button onClick={()=>this.handleClick('about')} id='about-Link'>ABOUT ME</button>
+							<button onClick={()=>this.handleClick('myWork')} id='myWork-Link'>MY WORK</button>
+							{/* <button onClick={()=>this.handleClick('contact')} id='contact-Link'>CONTACT</button> */}
 				</div>
-				<div ref={this.three} id="Third" className="scrollspy"> 
+				<div ref={this.about} id="about" className="scrollspy"> 
 					<About onClick={this.handleClick}/>
 				</div>
-				{/* <div ref={this.four} id="Fourth" className="scrollspy">
+				<div ref={this.myWork} id="myWork" className="scrollspy"> 
+					<MyWork />
+				</div>
+				{/* <div ref={this.contact} id="Fourth" className="scrollspy">
 						<Contact/>
 					</div> */}
-			</div>			
-
+				</div>			
+				<div className="fab_button_container hidden" >
+					<button className='fab_button'   onClick={() => this.handleClick('landingPage')} aria-label="edit">
+						<KeyboardArrowUpOutlinedIcon />
+					</button>
+			</div>
 		</div>
 	)
 }
 }
 
-function ElevationScroll(props) {
-	const { children, window } = props
-
-	const trigger = useScrollTrigger({
-		disableHysteresis: true,
-		threshold: 0,
-		target: window ? window() : undefined,
-	})
-
-	return React.cloneElement(children, {
-		elevation: trigger ? 4 : 0,
-	})
-}
-
-const styles = {
-	AppBar: {
-		backgroundColor: '#282c34',
-		// backgroundColor: '#173440',
-		// margin: 'auto'
-		backgroundImage: 'linear-gradient(to right, #262933, #292c37, #2b2e3b, #2e313f, #313443, #333746, #363949, #383c4c, #3a3f4f, #3d4252, #3f4556, #424859)',
-	},
-}
