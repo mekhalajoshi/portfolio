@@ -16,7 +16,7 @@ export default class About extends Component {
 				<div className='sectionDiv' >
 					<div className='about-top'>
 						<div className='about-image'>
-							<img className='avtar' src="..//MekhalaJoshi2.jpg" alt="Avatar"></img>
+							<img className='avtar' src="/MekhalaJoshi2.jpg" alt="Avatar"></img>
 						</div>
 						<div className='about-text'>
 							<Typography className='about-me-text' variant="h5" component="h2">
