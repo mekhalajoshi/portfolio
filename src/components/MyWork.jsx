@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import '../css/App.css'
 import '../css/components/MyWork.css'
 import Header from './Header'
-import Projects from './Projects'
+// import Projects from './Projects'
+import ProjectGrid from './ProjectGrid'
+
 import Typography from '@material-ui/core/Typography'
 // import Button from '@material-ui/core/Button'
 import { Link } from '@material-ui/core'
@@ -19,7 +21,9 @@ export default class MyWork extends Component {
 					Theese are some of the projects I've worked on. Check out more of my work on <Link style={styles.link} href='https://github.com/mekhalajoshi/' target='_blank'>GitHub</Link>.
 				</Typography>
 				<div className='sectionDiv' >
-					<Projects />
+					{/* <Projects /> */}
+					<ProjectGrid />
+
 				</div>
 			</div>
 		)
