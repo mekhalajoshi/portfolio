@@ -31,6 +31,7 @@ export default class About extends Component {
 							or view some of it <Link style={styles.link} onClick={() => this.props.onClick('myWork')}>here</Link>.<br /><br />
 							Feel free to contact me via email at  mekhalajoshi@gmail.com
             </Typography>
+				
 					</div>
 				</div>
 			</div>
