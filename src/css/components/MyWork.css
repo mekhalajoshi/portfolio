@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 100vh;
 }
-/* .project_grid_container{
+.project_grid_container{
 
-  
-} */
+  width: auto;
+}
