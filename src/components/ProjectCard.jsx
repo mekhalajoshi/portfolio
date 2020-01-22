@@ -4,21 +4,12 @@ import CardActions from '@material-ui/core/CardActions'
 import Button from '@material-ui/core/Button'
 import { Card, CardMedia, CardActionArea, CardContent, Typography, SvgIcon } from '@material-ui/core'
 import PlayArrowIcon from '@material-ui/icons/PlayArrow'
-import { Link } from '@material-ui/core'
-
 // import '../css/App.css'
 import '../css/components/ProjectCard.css'
 
 
 
 export default class ProjectCard extends Component {
-	// constructor(props) {
-	// 	super(props)
-
-	// 	this.state = {
-
-	// 	}
-	// }
 
 	render() {
 		return (
