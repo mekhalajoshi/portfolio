@@ -18,7 +18,7 @@ export default class MyWork extends Component {
 				<Typography color='textPrimary' align='center' className='text' variant="h5" component="h3">
 					These are some of the projects I've worked on. Check out more of my work on <Link style={styles.link} href='https://github.com/mekhalajoshi/' target='_blank'>GitHub</Link>.
 				</Typography>
-				<div >
+				<div className='project_grid_container'>
 					{/* <Projects /> */}
 					<ProjectGrid />
 				</div>

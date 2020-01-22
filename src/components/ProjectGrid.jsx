@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import ScrollReveal from 'scrollreveal'
 import Grid from '@material-ui/core/Grid'
 import ProjectCard from './ProjectCard'
+import '../css/components/MyWork.css'
+
 
 export default class ProjectGrid extends Component {
 	componentDidMount() {
@@ -81,7 +83,7 @@ export default class ProjectGrid extends Component {
 	}
 	render() {
 		return (
-			<div >
+			<div className='project_grid_container'>
 
 				<Grid
 					container
@@ -183,14 +185,14 @@ const projects = [
 	},
 	// {
 	// 	Title: 'Calculator',
-	// 	Poster: '/webdev.jpg',
+	// 	Poster: 'webdev.jpg',
 	// 	Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
 	// 	Tags: 'React',
 	// 	Link: 'calculator',
 	// },
 	// {
 	// 	Title: 'Music Details',
-	// 	Poster: '/webdev.jpg',
+	// 	Poster: 'webdev.jpg',
 	// 	Description: ' Rebel Alliance in a risky move to steal the Death Star plans.',
 	// 	Tags: 'React',
 	// 	Link: 'musicDetails',
@@ -203,5 +205,6 @@ const styles = {
 		height: '650px',
 		margin: 'auto',
 		alignContent: 'flex-start',
+		width: 'auto',
 	},
 }
