@@ -1,7 +1,7 @@
 .landing {
   width: 100%;
   min-height: 100vh;
-  background-image: url('/portfolio-background.jpg');
+  background-image: url('/public/portfolio-background.jpg');
   background-attachment: fixed;
   background-size: cover;
   display: flex;
