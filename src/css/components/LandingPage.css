@@ -1,7 +1,7 @@
 .landing {
+  background-image: url(../../landing_background.jpg);
   width: 100%;
   min-height: 100vh;
-  background-image: url('/portfolio-background.jpg');
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -33,7 +33,7 @@
 }
 
 .landing-name {
-    color: var(--pink);
+  color: var(--pink);
 }
 
 .button .right-icon {
@@ -55,19 +55,19 @@
 }
 
 .button-text {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 480px){
-    .landing-text {
-        font-size: 16pt;
-    }
-    .button {
-        font-size: 12pt;
-        padding: 10px;
-        margin-top: 20px;
-    }
-    .button .right-icon {
-        font-size: 10pt;
-    }
+  .landing-text {
+    font-size: 16pt;
+  }
+  .button {
+    font-size: 12pt;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .button .right-icon {
+    font-size: 10pt;
+  }
 }
