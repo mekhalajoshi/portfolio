@@ -155,28 +155,28 @@ export default class ProjectGrid extends Component {
 const projects = [
 	{
 		Title: 'Image Search',
-		Poster: '/webdev.jpg',
+		Poster: 'webdev.jpg',
 		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Image-Search/',
 	},
 	{
 		Title: 'Movie Database',
-		Poster: '/webdev.jpg',
+		Poster: 'webdev.jpg',
 		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Movie-Search/',
 	},
 	{
 		Title: 'Music Details',
-		Poster: '/webdev.jpg',
+		Poster: 'webdev.jpg',
 		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Music-Search/',
 	},
 	{
 		Title: 'Todo List',
-		Poster: '..//webdev.jpg',
+		Poster: 'webdev.jpg',
 		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Todo-List/',
