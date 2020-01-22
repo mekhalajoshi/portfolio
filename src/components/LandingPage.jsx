@@ -5,17 +5,15 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 export default class LandingPage extends Component {
 	render() {
 		return (
-			<div className="landingPageDiv">
-				<div className='landing_page_content_container'>
-					<div className="landing_page_text">
-						Hello, I'm <span className='name'>Mekhala Joshi</ span>.<br />
-						I'm a Software Developer.<br />
-					</div>
-					<button className='button' onClick={() => this.props.onClick('myWork')}>View my work &nbsp;
-						<ArrowForwardIcon className='right_icon' />
-					</button>
+			<div className="landing">
+				<div className="landing-text">
+					<div>Hello, I'm <span className="landing-name">Mekhala Joshi</span>.</div>
+					<div>I'm a full-stack web developer.</div>
 				</div>
-
+				<button className='button' onClick={() => this.props.onClick('about')}>
+					<span className="button-text">View my work</span>
+					<ArrowForwardIcon className='right-icon' />
+				</button>
 			</div >
 		)
 	}

@@ -81,12 +81,12 @@ export default class ProjectGrid extends Component {
 	}
 	render() {
 		return (
-			<div className='sectionDiv'>
+			<div >
 
 				<Grid
 					container
 					justify="center"
-					spacing={1}
+					spacing={5}
 					style={styles.GridContainer}
 				// className='GridContainer'
 				>
@@ -128,7 +128,7 @@ export default class ProjectGrid extends Component {
 						/>
 					</ Grid>
 					{/* <Grid item className='tile-4'  >
-						<ProjectCard 
+						<ProjectCard
 							link={projects[4].Link}
 							title={projects[4].Title}
 							poster={projects[4].Poster}
@@ -137,7 +137,7 @@ export default class ProjectGrid extends Component {
 						/>
 					</ Grid>
 					<Grid item className='tile-5'  >
-						<ProjectCard 
+						<ProjectCard
 							link={projects[5].Link}
 							title={projects[5].Title}
 							poster={projects[5].Poster}
@@ -202,9 +202,6 @@ const styles = {
 		display: 'flex',
 		height: '650px',
 		margin: 'auto',
-		overflow: 'auto',
 		alignContent: 'flex-start',
-
 	},
-
 }

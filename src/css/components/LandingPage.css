@@ -1,59 +1,73 @@
-.landingPageDiv{
+.landing {
   width: 100%;
-	height: 100vh;
-  margin: auto;
-  background-image: url("/parallax-image.jpg");
-  perspective: 2px;
+  min-height: 100vh;
+  background-image: url("/portfolio-background.jpg");
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-  font-size: 16px;
-}
-.landing_page_content_container{
-  margin: auto;
-  top: 50%;
-  left: 50%;
-}
-@media screen and (min-width: 600px) {
-.landing_page_text {
-    font-size: 26px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
 }
 
-.landing_page_text{
-    color: #fff;
-    font-size: 26px;
-    font-weight: 100;
-	
+.landing-text {
+  text-align: center;
+  color: white;
+  font-size: 32pt;
+  line-height: 1.3;
+  pointer-events: none;
 }
-.name{
-		color: var(--pink);
-		font-weight: 400;
-	}
-.button{
+
+.button {
   background: rgba(40, 44, 52, 0);
   color: white;
-  font-size: 1.3rem;
+  font-size: 16pt;
   outline: none;
   transition: all .5s;
   cursor: pointer;
   border: 2px solid #fff;
-  padding: 10px;
-  margin-top: 10px;
-  display: inline-block;
-}
-.button .right_icon{
+  padding: 20px;
+  margin-top: 30px;
+  display: flex;
   align-self: center;
-  font-size: 1rem;
+}
+
+.landing-name {
+    color: var(--pink);
+}
+
+.button .right-icon {
+  align-self: center;
+  font-size: 14pt;
   transition: all .5s;
 }
-.button:hover{
-  background-color: #04C2C9;
-  border-color: #04C2C9;
+
+.button:hover {
+  color: #fff;
+  background-color: var(--aqua);
+  border-color: var(--aqua);
   transition: all .5s;
 }
-.button:hover .right_icon {
-  transition: all .5s;
+
+.button:hover .right-icon {
+  transition: all .2s;
   transform: rotate(90deg);
+}
+
+.button-text {
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .landing-text {
+        font-size: 16pt;
+    }
+    .button {
+        font-size: 12pt;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .button .right-icon {
+        font-size: 10pt;
+    }
 }

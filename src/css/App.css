@@ -1,23 +1,20 @@
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
   --white:#E5E6F1;
   --yellow:#f5c000;
-  --aqua:#00FFFF;
+  --aqua:#04C2C9;
   --pink:#E31B6D;
   --gray:#242834;
 }
+
 html, body {
   height: 100%;
   width:100%;
-}
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
 }
 
 .links {
@@ -29,30 +26,30 @@ body {
   z-index: 99;
   background-color: #242834;
   border-bottom: 3px solid var(--aqua);
-  margin-right: 70px;
+  padding: 10px;
 }
+
 .links button {
   border: none;
   outline: none;
   float: right;
   padding: 13px;
-  margin-right: 10px;
   text-decoration: none;
   font-size: 16px;
   font-weight: 100;
   color: white;
-
   cursor: pointer;
   background: #242834;
 }
+
 .links button.active {
-  /* border-bottom: 2px ridge #d71559; */
   color:  #d71559 !important;
 }
+
 .links button:hover{
   color: lightslategrey;
+}
 
-} 
 .fixed{
   position: sticky;
 }
@@ -60,53 +57,45 @@ body {
 .containers {
   width: 100%;;
   height: 100%;
-  /* margin-top: 49px; */
 }
+
 .containers > div {
-  /* height: 1000px; */
   width: 100%;
   display: flex;
 }
-.scrollspy{
+
+.scrollspy {
   background-color: #ffffff;
   min-height: 100vh;
+}
 
-}
-/* .containers > div:nth-child(odd) {
-  background: skyblue;
-  background-image: linear-gradient(to right, #262933, #292c37, #2b2e3b, #2e313f, #313443, #333746, #363949, #383c4c, #3a3f4f, #3d4252, #3f4556, #424859);
-  
-}
-.containers > div:nth-child(even) {
-  background: gold;;
-  background-image: linear-gradient(to right, #262933, #292c37, #2b2e3b, #2e313f, #313443, #333746, #363949, #383c4c, #3a3f4f, #3d4252, #3f4556, #424859); 
-  background-image: linear-gradient(to right, #2f323d, #333743, #383c4a, #3c4250, #404757);
-} */
 .sectionDiv {
   display:flex;
-    justify-content: center;
-    align-items: flex-end;
-  width: 70%;
-  /* height:650px; */
-  /* min-height: 100vh; */
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
   margin: auto;
-  /* background-color: blue; */
   background: rgba(40, 44, 52, 0);
-
-
 }
- 
-.fab_button_container{
+
+.fab_button_container {
   position: fixed;
   bottom: 2vh;
   right: 2vw;
 }
-.hidden{
+
+.hidden {
   visibility: hidden;
 }
-.fab_button{
+
+.fab_button {
   background-color:var(--pink);
   color:white;
   outline: none;
+}
 
+@media screen and (max-width: 480px){
+    .links {
+        justify-content: space-around;
+    }
 }
