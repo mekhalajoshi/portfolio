@@ -60,6 +60,7 @@ const styles = {
 		margin: 'auto',
 		borderRadius: '0px',
 		textDecoration: 'none',
+		height: '380px',
 	},
 	CardActions: {
 		margin: '0px',

@@ -84,7 +84,6 @@ export default class ProjectGrid extends Component {
 	render() {
 		return (
 			<div className='project_grid_container'>
-
 				<Grid
 					container
 					justify="center"
@@ -92,7 +91,6 @@ export default class ProjectGrid extends Component {
 					style={styles.GridContainer}
 				// className='GridContainer'
 				>
-
 					<Grid item className='tile-0' >
 						<ProjectCard
 							link={projects[0].Link}
@@ -158,28 +156,28 @@ const projects = [
 	{
 		Title: 'Image Search',
 		Poster: 'webdev.jpg',
-		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
+		Description: 'A React app to search for images implemented using React Hooks and Material-UI by Google. ',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Image-Search/',
 	},
 	{
 		Title: 'Movie Database',
 		Poster: 'webdev.jpg',
-		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
+		Description: 'This app uses the OMDb API which is a RESTful web service to obtain movie information, content and images.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Movie-Search/',
 	},
 	{
-		Title: 'Music Details',
+		Title: 'Music Artist Details',
 		Poster: 'webdev.jpg',
-		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
+		Description: 'A Flux pattern is used to manage app data which it pulls from audiodb API to display artist information.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Music-Search/',
 	},
 	{
 		Title: 'Todo List',
 		Poster: 'webdev.jpg',
-		Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
+		Description: 'TODO list app is self explanatory. It is implemented using the Symantic-UI',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Todo-List/',
 	},
@@ -202,7 +200,6 @@ const projects = [
 const styles = {
 	GridContainer: {
 		display: 'flex',
-		height: '650px',
 		margin: 'auto',
 		alignContent: 'flex-start',
 		width: 'auto',
