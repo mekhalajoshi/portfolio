@@ -4,7 +4,7 @@ import'./css/App.css'
 import MyWork from './components/MyWork'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
-// import Contact from './Contact'
+import Footer from './components/Footer'
 
 import KeyboardArrowUpOutlinedIcon from '@material-ui/icons/KeyboardArrowUpOutlined';
 
@@ -117,6 +117,7 @@ render() {
 						<KeyboardArrowUpOutlinedIcon />
 					</button>
 			</div>
+			{/* <Footer></Footer> */}
 		</div>
 	)
 }
