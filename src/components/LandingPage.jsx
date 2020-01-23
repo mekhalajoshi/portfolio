@@ -11,7 +11,7 @@ export default class LandingPage extends Component {
 					<div>I'm a full-stack web developer.</div>
 				</div>
 				<button className='button' onClick={() => this.props.onClick('about')}>
-					<span className="button-text">View my work</span>
+					<span className="button-text">View my profile</span>
 					<ArrowForwardIcon className='right-icon' />
 				</button>
 			</div >

@@ -1,5 +1,5 @@
 .landing {
-  background-image: url('https://fiplex.com/wp-content/uploads/2016/07/parallax-2.jpg');
+  background-image: url('/imgs/landing_background.jpg');
   width: 100%;
   min-height: 100vh;
   background-attachment: fixed;
