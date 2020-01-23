@@ -1,5 +1,5 @@
 .landing {
-  background-image: url('/imgs/landing_background.jpg');
+  background-image: url('../../imgs/landing_background.jpg');
   width: 100%;
   min-height: 100vh;
   background-attachment: fixed;
