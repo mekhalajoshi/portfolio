@@ -117,7 +117,7 @@ render() {
 						<KeyboardArrowUpOutlinedIcon />
 					</button>
 			</div>
-			{/* <Footer></Footer> */}
+			<Footer />
 		</div>
 	)
 }

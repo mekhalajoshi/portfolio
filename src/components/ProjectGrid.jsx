@@ -177,7 +177,8 @@ const projects = [
 	{
 		Title: 'Todo List',
 		Poster: 'webdev.jpg',
-		Description: 'TODO list app is self explanatory. It is implemented using the Symantic-UI',
+
+		Description: 'TODO list app is self explanatory. It is implemented using the Symantic-UI.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Todo-List/',
 	},
