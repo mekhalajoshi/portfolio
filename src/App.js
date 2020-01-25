@@ -6,7 +6,7 @@ import LandingPage from './components/LandingPage'
 import About from './components/About'
 import Footer from './components/Footer'
 
-import KeyboardArrowUpOutlinedIcon from '@material-ui/icons/KeyboardArrowUpOutlined';
+// import KeyboardArrowUpOutlinedIcon from '@material-ui/icons/KeyboardArrowUpOutlined';
 
 export default class App extends Component {
 
@@ -21,7 +21,6 @@ export default class App extends Component {
 	constructor(props) {
 		super(props)
 		this.textInput = React.createRef()
-
 		this.landingPage = React.createRef()
 		this.about = React.createRef()
 		this.myWork = React.createRef()
@@ -51,13 +50,11 @@ handleScroll = e => {
 				.classList.add('active')
 			if (currentID === `landingPage`) {
 				links.classList.remove('fixed')
-				fab.classList.add('hidden')
-
+			// 	fab.classList.add('hidden')
 			}
 			if (currentID === `about`) {
 				links.classList.add('fixed')
-				fab.classList.remove('hidden')
-
+			// 	fab.classList.remove('hidden')
 			}
 		}
 	})
@@ -112,12 +109,12 @@ render() {
 						<Contact/>
 					</div> */}
 				</div>			
-				<div className="fab_button_container hidden" >
+				{/* <div className="fab_button_container hidden" >
 					<button className='fab_button'   onClick={() => this.handleClick('landingPage')} aria-label="edit">
 						<KeyboardArrowUpOutlinedIcon />
 					</button>
-			</div>
-			{/* <Footer></Footer> */}
+			</div> */}
+			<Footer onClick={this.handleClick}/>
 		</div>
 	)
 }
