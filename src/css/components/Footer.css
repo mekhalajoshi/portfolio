@@ -1,4 +1,32 @@
 .footer_container{
-  background-color: coral;
+  position: absolute;
   height: 200px;
+  width: 100%;
+}
+.back_to_top_button_container{
+  position: absolute;
+  height: 40px;
+  width: 30px;
+  margin-left: -15px;
+  top: 0;
+  left: 50%;
+  z-index: 2;
+  /* border: none; */
+  /* outline: none; */
+}
+.back_to_top_button {
+  background-color:var(--pink);
+  color:white;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+  background-color: var(--gray);
+  width: 100%;
 }
