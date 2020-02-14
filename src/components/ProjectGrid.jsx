@@ -98,6 +98,7 @@ export default class ProjectGrid extends Component {
 							poster={projects[0].Poster}
 							description={projects[0].Description}
 							tags={projects[0].Tags}
+							GitHubLink={projects[0].GitHubLink}
 						/>
 					</ Grid>
 					<Grid item className='tile-1'  >
@@ -107,6 +108,7 @@ export default class ProjectGrid extends Component {
 							poster={projects[1].Poster}
 							description={projects[1].Description}
 							tags={projects[1].Tags}
+							GitHubLink={projects[1].GitHubLink}
 						/>
 					</ Grid>
 					<Grid item className='tile-2'  >
@@ -116,6 +118,7 @@ export default class ProjectGrid extends Component {
 							poster={projects[2].Poster}
 							description={projects[2].Description}
 							tags={projects[2].Tags}
+							GitHubLink={projects[2].GitHubLink}
 						/>
 					</ Grid>
 					<Grid item className='tile-3'  >
@@ -125,6 +128,7 @@ export default class ProjectGrid extends Component {
 							poster={projects[3].Poster}
 							description={projects[3].Description}
 							tags={projects[3].Tags}
+							GitHubLink={projects[3].GitHubLink}
 						/>
 					</ Grid>
 					{/* <Grid item className='tile-4'  >
@@ -154,11 +158,21 @@ export default class ProjectGrid extends Component {
 }
 const projects = [
 	{
+		Title: 'Todo List',
+		Poster: 'webdev.jpg',
+		Description: 'React Todo app consumes RESTful Microservices created using AWS serverless architecture.',
+		Tags: 'React',
+		Link: 'https://github.com/mekhalajoshi/Todo-List',
+		GitHubLink: 'https://github.com/mekhalajoshi/Todo-List',
+	},
+	{
 		Title: 'Image Search',
 		Poster: 'webdev.jpg',
 		Description: 'A React app to search for images implemented using React Hooks and Material-UI by Google. ',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Image-Search/',
+		GitHubLink: 'https://github.com/mekhalajoshi/Image-Search',
+
 	},
 	{
 		Title: 'Movie Database',
@@ -166,6 +180,8 @@ const projects = [
 		Description: 'This app uses the OMDb API which is a RESTful web service to obtain movie information, content and images.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Movie-Search/',
+		GitHubLink: 'https://github.com/mekhalajoshi/Movie-Search',
+
 	},
 	{
 		Title: 'Music Artist Details',
@@ -173,14 +189,8 @@ const projects = [
 		Description: 'A Flux pattern is used to manage app data which it pulls from audiodb API to display artist information.',
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Music-Search/',
-	},
-	{
-		Title: 'Todo List',
-		Poster: 'webdev.jpg',
+		GitHubLink: 'https://github.com/mekhalajoshi/Music-Search',
 
-		Description: 'TODO list app is self explanatory. It is implemented using the Symantic-UI.',
-		Tags: 'React',
-		Link: 'https://mekhalajoshi.github.io/Todo-List/',
 	},
 	// {
 	// 	Title: 'Calculator',

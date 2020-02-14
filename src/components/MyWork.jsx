@@ -14,8 +14,8 @@ export default class MyWork extends Component {
 	render() {
 		return (
 			<div className='my_work_container'>
-				<Header title='My Work' />
-				<Typography color='textPrimary' align='center' className='text' variant="h5" component="h3">
+				<Header title='MY WORK' />
+				<Typography style={styles.typography}  color='textPrimary' align='center' className='text' variant="h5" component="h3">
 					These are some of the projects I've worked on. Check out more of my work on <Link style={styles.link} href='https://github.com/mekhalajoshi/' target='_blank'>GitHub</Link>.
 				</Typography>
 				<div className='project_grid_container'>
@@ -28,6 +28,9 @@ export default class MyWork extends Component {
 }
 
 const styles = {
+	typography: {
+		fontFamily: 'Raleway'
+	},
 	link: {
 		color: '#E31B6D',
 		cursor: 'pointer',
