@@ -18,15 +18,26 @@ export default class Header extends Component {
 	}
 
 	render() {
+		let className = 'title'
+		let classHeaderBar = 'header-bar'
+		if (this.props.title === 'CONTACT') {
+			className += ' light'
+			classHeaderBar +=' header-bar-light'
+		}
 		return (
 			<div className="section-title-container" >
 				<div className="section-title"  >
-					<Typography variant="h2" component="h2" align='center'>
-						<span className="title">{this.props.title} </span>
-						<div className="header-bar"></div>
+					<Typography  style={styles.typography}  variant="h2" component="h2" align='center'>
+						<span className={className}>{this.props.title} </span>
+						<div className={classHeaderBar}></div>
 					</Typography>
 				</div>
 			</div>
 		)
 	}
+}
+const styles = {
+	typography: {
+		fontFamily: 'Raleway'
+	},
 }

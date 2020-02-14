@@ -11,13 +11,13 @@ export default class About extends Component {
 
 		return (
 			<div className="about">
-				<Header title='About Me' />
+				<Header title='ABOUT ME' />
 				<div className="about-content">
 					<div className="about-image">
 						<img className='avatar' src="MekhalaJoshi2.jpg" alt="Avatar"></img>
 					</div>
 					<div className="about-text">
-						<Typography className='about-me-text' variant="h5" component="h2">
+						<Typography style={styles.typography} className='about-me-text' variant="h5" component="h2">
 							Hi there! I am Mekhala Joshi.
               I am an AWS certified Software Developer based in Toronto, Canada.
               <br /><br />
@@ -40,6 +40,9 @@ export default class About extends Component {
 }
 
 const styles = {
+	typography: {
+		fontFamily: 'Raleway'
+	},
 	link: {
 		color: '#E31B6D',
 		cursor: 'pointer',

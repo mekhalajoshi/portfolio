@@ -1,18 +1,17 @@
 .footer_container{
-  position: absolute;
+  display: flex;
   height: 200px;
   width: 100%;
+  align-items: flex-start;
+  /* align-self: flex-end; */
 }
 .back_to_top_button_container{
   position: absolute;
-  height: 40px;
-  width: 30px;
-  margin-left: -15px;
-  top: 0;
-  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  left: 50%; 
   z-index: 2;
-  /* border: none; */
-  /* outline: none; */
 }
 .back_to_top_button {
   background-color:var(--pink);
@@ -25,8 +24,9 @@
 }
 .footer{
   position: absolute;
-  bottom: 0;
-  height: 180px;
+  height: 175px;
   background-color: var(--gray);
   width: 100%;
+  left: 0;
+  align-self: flex-end;
 }

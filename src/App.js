@@ -4,10 +4,9 @@ import'./css/App.css'
 import MyWork from './components/MyWork'
 import LandingPage from './components/LandingPage'
 import About from './components/About'
-import Footer from './components/Footer'
+import Contact from './components/Contact'
 
-// import KeyboardArrowUpOutlinedIcon from '@material-ui/icons/KeyboardArrowUpOutlined';
-
+ 
 export default class App extends Component {
 
 	componentDidMount() {
@@ -34,7 +33,7 @@ handleScroll = e => {
 	const links = document.querySelector('.links')
 	const linksHeight = links.offsetHeight
 	const allLinks = links.querySelectorAll('button')
-	const fab = document.querySelector('.fab_button_container')
+	// const fab = document.querySelector('.fab_button_container')
 	scrollspys.forEach(current => {
 		var _ = current
 		let currentElementOffset = _.offsetTop
@@ -48,11 +47,11 @@ handleScroll = e => {
 			document
 				.querySelector(`#${currentID}-Link`)
 				.classList.add('active')
-			if (currentID === `landingPage`) {
+			if (currentID === 'landingPage') {
 				links.classList.remove('fixed')
 			// 	fab.classList.add('hidden')
 			}
-			if (currentID === `about`) {
+			if (currentID === 'about') {
 				links.classList.add('fixed')
 			// 	fab.classList.remove('hidden')
 			}
@@ -76,9 +75,9 @@ handleClick(id) {
 		this.about.current.scrollIntoView({block: 'start', behavior: 'smooth'})
 		break
 		
-		// case 'contact':
-		// 	this.contact.current.scrollIntoView({block: 'start', behavior: 'smooth'})
-		// 	break
+	case 'contact':
+		this.contact.current.scrollIntoView({block: 'start', behavior: 'smooth'})
+		break
 		
 	default:
 		break
@@ -94,10 +93,10 @@ render() {
 					<LandingPage  onClick={this.handleClick}/>
 				</div>
 				<div className="links">
-							<button onClick={()=>this.handleClick('landingPage')} id='landingPage-Link'className="active">HOME</button>
-							<button onClick={()=>this.handleClick('about')} id='about-Link'>ABOUT ME</button>
-							<button onClick={()=>this.handleClick('myWork')} id='myWork-Link'>MY WORK</button>
-							{/* <button onClick={()=>this.handleClick('contact')} id='contact-Link'>CONTACT</button> */}
+					<button onClick={()=>this.handleClick('landingPage')} id='landingPage-Link'className="active">HOME</button>
+					<button onClick={()=>this.handleClick('about')} id='about-Link'>ABOUT ME</button>
+					<button onClick={()=>this.handleClick('myWork')} id='myWork-Link'>MY WORK</button>
+					<button onClick={()=>this.handleClick('contact')} id='contact-Link'>CONTACT</button>
 				</div>
 				<div ref={this.about} id="about" className="scrollspy"> 
 					<About onClick={this.handleClick}/>
@@ -105,16 +104,10 @@ render() {
 				<div ref={this.myWork} id="myWork" className="scrollspy"> 
 					<MyWork />
 				</div>
-				{/* <div ref={this.contact} id="Fourth" className="scrollspy">
-						<Contact/>
-					</div> */}
-				</div>			
-				{/* <div className="fab_button_container hidden" >
-					<button className='fab_button'   onClick={() => this.handleClick('landingPage')} aria-label="edit">
-						<KeyboardArrowUpOutlinedIcon />
-					</button>
-			</div> */}
-			<Footer onClick={this.handleClick}/>
+				<div ref={this.contact} id="contact" className="scrollspy">
+					<Contact onClick={this.handleClick}/>
+				</div>
+			</div>			
 		</div>
 	)
 }
