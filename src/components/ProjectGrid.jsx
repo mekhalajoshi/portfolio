@@ -192,7 +192,6 @@ const projects = [
 		GitHubLink: 'https://github.com/mekhalajoshi/Music-Search',
 
 	},
-	
 	// {
 	// 	Title: 'Calculator',
 	// 	Poster: 'webdev.jpg',

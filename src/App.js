@@ -108,6 +108,7 @@ render() {
 					<Contact onClick={this.handleClick}/>
 				</div>
 			</div>			
+
 		</div>
 	)
 }
