@@ -15,7 +15,7 @@
   padding: 10px;
   color: #ffff;
   font-size: 16px;
-	caret-color: gray;
+	caret-color: var(--aqua);
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -26,7 +26,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: gray;
+  -webkit-text-fill-color: white;
   transition: background-color 5000s ease-in-out 0s;
 }
 

@@ -162,7 +162,7 @@ const projects = [
 		Poster: 'webdev.jpg',
 		Description: 'React Todo app consumes RESTful Microservices created using AWS serverless architecture.',
 		Tags: 'React',
-		Link: 'https://github.com/mekhalajoshi/Todo-List',
+		Link: 'https://mekhalajoshi.github.io/Todo-List/',
 		GitHubLink: 'https://github.com/mekhalajoshi/Todo-List',
 	},
 	{
