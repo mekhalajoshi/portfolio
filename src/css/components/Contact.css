@@ -2,10 +2,10 @@
   width: 100%;
   background-color: #2a2e39;
   display: grid;
-	grid-template-rows: 30% 50% 20%;
+	grid-template-rows: 25% auto 10%;
   border-top: 3px solid var(--aqua);
 }
 .page_footer{
-  align-self: flex-start;
+  align-self: end;
   width: 100%;
 }
