@@ -11,7 +11,10 @@
   width: 50px;
   margin-left: -25px;
   left: 50%; 
+/* bottom: 200px; */
   z-index: 2;
+	/* margin: auto; */
+  align-self: flex-start;
 
 }
 .back_to_top_button {
@@ -24,7 +27,7 @@
 
 }
 .footer{
-  position: absolute;
+  /* position: absolute; */
   height: 175px;
   background-color: var(--gray);
   width: 100%;
