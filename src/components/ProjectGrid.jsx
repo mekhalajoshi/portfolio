@@ -89,7 +89,6 @@ export default class ProjectGrid extends Component {
 					justify="center"
 					spacing={5}
 					style={styles.GridContainer}
-				// className='GridContainer'
 				>
 					<Grid item className='tile-0' >
 						<ProjectCard
@@ -121,34 +120,6 @@ export default class ProjectGrid extends Component {
 							GitHubLink={projects[2].GitHubLink}
 						/>
 					</ Grid>
-					{/* <Grid item className='tile-3'  >
-						<ProjectCard
-							link={projects[3].Link}
-							title={projects[3].Title}
-							poster={projects[3].Poster}
-							description={projects[3].Description}
-							tags={projects[3].Tags}
-							GitHubLink={projects[3].GitHubLink}
-						/>
-					</ Grid> */}
-					{/* <Grid item className='tile-4'  >
-						<ProjectCard
-							link={projects[4].Link}
-							title={projects[4].Title}
-							poster={projects[4].Poster}
-							description={projects[4].Description}
-							tags={projects[4].Tags}
-						/>
-					</ Grid>
-					<Grid item className='tile-5'  >
-						<ProjectCard
-							link={projects[5].Link}
-							title={projects[5].Title}
-							poster={projects[5].Poster}
-							description={projects[5].Description}
-							tags={projects[5].Tags}
-						/>
-					</ Grid> */}
 
 				</Grid>
 
@@ -183,30 +154,6 @@ const projects = [
 		GitHubLink: 'https://github.com/mekhalajoshi/Movie-Search',
 
 	},
-	// {
-	// 	Title: 'Music Artist Details',
-	// 	Poster: 'webdev.jpg',
-	// 	Description: 'A Flux pattern is used to manage app data which it pulls from audiodb API to display artist information.',
-	// 	Tags: 'React',
-	// 	Link: 'https://mekhalajoshi.github.io/Music-Search/',
-	// 	GitHubLink: 'https://github.com/mekhalajoshi/Music-Search',
-
-	// },
-	// {
-
-	// 	Title: 'Calculator',
-	// 	Poster: 'webdev.jpg',
-	// 	Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
-	// 	Tags: 'React',
-	// 	Link: 'calculator',
-	// },
-	// {
-	// 	Title: 'Music Details',
-	// 	Poster: 'webdev.jpg',
-	// 	Description: ' Rebel Alliance in a risky move to steal the Death Star plans.',
-	// 	Tags: 'React',
-	// 	Link: 'musicDetails',
-	// },
 
 ]
 const styles = {
