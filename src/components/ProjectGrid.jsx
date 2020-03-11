@@ -121,7 +121,7 @@ export default class ProjectGrid extends Component {
 							GitHubLink={projects[2].GitHubLink}
 						/>
 					</ Grid>
-					<Grid item className='tile-3'  >
+					{/* <Grid item className='tile-3'  >
 						<ProjectCard
 							link={projects[3].Link}
 							title={projects[3].Title}
@@ -130,7 +130,7 @@ export default class ProjectGrid extends Component {
 							tags={projects[3].Tags}
 							GitHubLink={projects[3].GitHubLink}
 						/>
-					</ Grid>
+					</ Grid> */}
 					{/* <Grid item className='tile-4'  >
 						<ProjectCard
 							link={projects[4].Link}
@@ -183,16 +183,17 @@ const projects = [
 		GitHubLink: 'https://github.com/mekhalajoshi/Movie-Search',
 
 	},
-	{
-		Title: 'Music Artist Details',
-		Poster: 'webdev.jpg',
-		Description: 'A Flux pattern is used to manage app data which it pulls from audiodb API to display artist information.',
-		Tags: 'React',
-		Link: 'https://mekhalajoshi.github.io/Music-Search/',
-		GitHubLink: 'https://github.com/mekhalajoshi/Music-Search',
-
-	},
 	// {
+	// 	Title: 'Music Artist Details',
+	// 	Poster: 'webdev.jpg',
+	// 	Description: 'A Flux pattern is used to manage app data which it pulls from audiodb API to display artist information.',
+	// 	Tags: 'React',
+	// 	Link: 'https://mekhalajoshi.github.io/Music-Search/',
+	// 	GitHubLink: 'https://github.com/mekhalajoshi/Music-Search',
+
+	// },
+	// {
+
 	// 	Title: 'Calculator',
 	// 	Poster: 'webdev.jpg',
 	// 	Description: 'The daughter of an Imperial scientist joins the Rebel Alliance in a risky move to steal the Death Star plans.',
