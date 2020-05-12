@@ -32,10 +32,9 @@
     "setupFilesAfterEnv": [
       "./setupTests.js"
     ],
- "testPathIgnorePatterns": [
+    "testPathIgnorePatterns": [
       "/node_modules/"
     ]
-
   },
   "browserslist": {
     "production": [

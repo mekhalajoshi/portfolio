@@ -120,6 +120,16 @@ export default class ProjectGrid extends Component {
 							GitHubLink={projects[2].GitHubLink}
 						/>
 					</ Grid>
+					<Grid item className='tile-3'  >
+						<ProjectCard
+							link={projects[3].Link}
+							title={projects[3].Title}
+							poster={projects[3].Poster}
+							description={projects[3].Description}
+							tags={projects[3].Tags}
+							GitHubLink={projects[3].GitHubLink}
+						/>
+					</ Grid>
 
 				</Grid>
 
@@ -135,6 +145,14 @@ const projects = [
 		Tags: 'React',
 		Link: 'https://mekhalajoshi.github.io/Todo-List/',
 		GitHubLink: 'https://github.com/mekhalajoshi/Todo-List',
+	},
+	{
+		Title: 'Trello Clone',
+		Poster: 'webdev.jpg',
+		Description: 'Trello-Clone uses React on the frontend and AWS serverless architecture on backend.',
+		Tags: 'React',
+		Link: 'https://mekhalajoshi.github.io/trello-clone/',
+		GitHubLink: 'https://github.com/mekhalajoshi/trello-clone',
 	},
 	{
 		Title: 'Image Search',
